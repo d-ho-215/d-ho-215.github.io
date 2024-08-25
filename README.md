@@ -1,2 +1,4 @@
-# d-ho-215.github.io
-Basic content webpage.
+# A Place for Stuff.
+### This is some of the stuff I've made.  
+
+Thanks for stopping by!
