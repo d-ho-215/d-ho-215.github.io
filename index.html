@@ -1,94 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="english">
+
 <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Pelican" />
-        <title>A Pelican Blog</title>
-        <link rel="stylesheet" href="https://d-ho-215.github.io/theme/css/main.css" />
-        <link href="https://d-ho-215.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://d-ho-215.github.io/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://d-ho-215.github.io/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://d-ho-215.github.io/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dan Howard">
+  <meta name="description" content="Posts and writings by Dan Howard">
+
+  <link href="https://d-ho-215.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Accumulated Works Atom" />
+
+
+  <title>
+    Accumulated Works
+  </title>
+
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://d-ho-215.github.io/">A Pelican Blog</a></h1>
-                <nav><ul>
-                    <li><a href="https://d-ho-215.github.io/category/plotterart-generativeart.html">plotterart, generativeart</a></li>
-                    <li><a href="https://d-ho-215.github.io/category/review.html">Review</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://d-ho-215.github.io">
+        <img src="https://d-ho-215.github.io/theme/images/logo.png" alt="logo">
+      </a>
+      <h2><a href="https://d-ho-215.github.io">Accumulated Works</a></h2>
+      <p></p>
+      <ul>
+        <li><a href="https://d-ho-215.github.io/category/plotterart-generativeart.html">plotterart, generativeart</a></li>
+        <li><a href="https://d-ho-215.github.io/category/review.html">Review</a></li>
+        <li><a href="https://github.com/d-ho-215" target="_blank">Instagram</a></li>
+        <li><a href="https://www.instagram.com/d_ho__codes/" target="_blank">Github</a></li>
+        <li><a href="https://x.com/d_ho__" target="_blank">Twitter</a></li>
+        <li><a href="https://linktr.ee/d_ho__" target="_blank">Linktree</a></li>
+      </ul>
+    </div>
+  </aside>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="https://d-ho-215.github.io/bent-broken.html">bent & broken</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2024-09-10T00:00:00+00:00">
-                Published: Tue 10 September 2024
-        </abbr>
+  <main>
+    <header>
+      <p>
+      <a href="https://d-ho-215.github.io">Index</a> &brvbar; <a href="https://d-ho-215.github.io/archives.html">Archives</a>
+      &brvbar; <a href="https://d-ho-215.github.io/feeds/all.atom.xml">Atom</a>
+      </p>
+    </header>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://d-ho-215.github.io/author/dan.html">Dan</a>
-        </address>
-<p>In <a href="https://d-ho-215.github.io/category/plotterart-generativeart.html">plotterart, generativeart</a>.</p>
-<p>tags: <a href="https://d-ho-215.github.io/tag/p5js.html">p5js</a> <a href="https://d-ho-215.github.io/tag/plotterart.html">plotterart</a> <a href="https://d-ho-215.github.io/tag/generativeart.html">generativeart</a> </p>
-</footer><!-- /.post-info --><p><img alt="bent &amp; broken 00" src="images/bent_broken_plot_00_sm.jpg">
+<article>
+  <div class="article_title">
+    <h1><a href="https://d-ho-215.github.io/bent-broken.html">bent & broken</a></h1>
+  </div>
+  <div class="article_text">
+    <p><img alt="bent &amp; broken 00" src="images/bent_broken_plot_00_sm.jpg">
 <br><em>bent &amp; broken 00</em></p>
 <p><img alt="bent &amp; broken 06" src="images/bent_broken_plot_postcard_06_sm.jpg">
 <br><em>bent &amp; broken 06</em></p>
-<p>This piece started as a study of how to generate a sort of grid with a rhythm that changed over time. At first conception, I was thinking of ways to try to make grids similar in structure to some of the work of <a href="https://jacobvanloon.com/Arbor-Volume-I">Jacob Van Loon's Arbor series</a>, where sets of parallel lines at different spacings intersect at angles, and color blocks sometimes span between multiple cells. My final result obviously did not end up not much like this, but this was the original inspiration.</p>
-<p><img alt="image of Jacob Van Loon's 8th and Main painting" src="images/JVL_8th_main_sm.jpg">
-<br><em>Jacob Van Loon's 8th and Main</em></p>
-<p><img alt="detail of 8th and Main" src="images/JVL_8th_main_detail_sm.jpg">
-<br><em>Detail from 8th and Main</em></p>
-<p>The approach I decided to pursue was to treat a column of the grid as a line of some width, and to model the intersections as divisions or breaks in the line.  This created a conceptual structure where each line spanned from 0 to 1, and breaks in the line were added at two at a time at random positions in the interval of 0 to 1 (basically, just using the standard output of a <code>random()</code> function).  When rendering the line, each time the position passed one of the break points, the drawing toggle would flip, so that the output would be a broken line.  By adding and subtracting additional break points for each subsequent line, the drawn part of the line would invert at random locations, giving a sort if irregular grid pattern. </p>
-<p>With this structure in place, I wanted to try out either slanting portions of the drawn line, or changing the angle the entire line is drawn at at random locations.  </p>
-<p>Color for each drawn line is determined by a probability function where selected colors are spaced evenly in the range from 0 to 1, and the chance of selecting a certain color is determined using 1 minus the distance to the color squared[^1] over the sum of the squared distances for all colors. For each subsequent line, there's a chance to add an accent color at a random location in the color stack, and/or to shuffle the order of the colors. </p>
-<p>For plotting, the first versions of this were created for a fundraising event in my office [^2]. I made selected one version each of the slanted and rotated iterations, and developed some simple color pallettes using Stabilo 88 colored pens. These were then plotted on my LY Drawbot pen plotter on watercolor paper.</p>
-<p>{^1] Actually, its the (1 - distance) to the 4th power, but thats too unwieldy to write out in the description.
-[^2] The fundraiser was themed around Napkin sketches, where participants could buy a 6 inch square piece of paper from the organizers, created whatever 'sketch' they wanted on the paper, then donate the artwork to the fundraiser.  All the artworks were then entered into a silent auction for a week, and the proceeds donated to Philabundance, a local charity fighting hunger in our dear Philadelphia. </p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>This piece started as a study of how to generate a sort of grid with a rhythm that changed over time. At first conception, I was thinking of ways to try to make grids similar in structure to some of the work of <a href="https://jacobvanloon.com/Arbor-Volume-I">Jacob …</a></p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h1><a href="https://d-ho-215.github.io/my-first-review.html">My First Review</a></h1>
+  </div>
+  <div class="article_text">
+    <p>Following is a review of my favorite mechanical keyboard.</p>
+  </div>
+</article>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://d-ho-215.github.io/my-first-review.html" rel="bookmark"
-                           title="Permalink to My First Review">My First Review</a></h1>
-                </header>
+<footer>
+<div id="paginator">
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2010-12-03T10:20:00+00:00">
-                Published: Fri 03 December 2010
-        </abbr>
+</div>
+</footer>
 
-<p>In <a href="https://d-ho-215.github.io/category/review.html">Review</a>.</p>
-
-</footer><!-- /.post-info -->                <p>Following is a review of my favorite mechanical keyboard.</p>
-                <a class="readmore" href="https://d-ho-215.github.io/my-first-review.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://d-ho-215.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+    <div id="ending_message">
+      <p>&copy; Dan Howard. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
 </body>
 </html>
